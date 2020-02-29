@@ -1,15 +1,18 @@
 import React from "react"
 import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-// import Image from "../components/image"
+import BackgroundImage from "../components/background-image"
 import SEO from "../components/seo"
 
+import indexStyles from '../styles/modules/index.module.scss'
+
 const IndexPage = () => (
-  <Layout>
-    <p>Index Page</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+  <>
+    <div className={indexStyles.container}>
+      <BackgroundImage className={indexStyles.backgroundImg} />
+      <h1>Rob Moose</h1>
+    </div>
+  </>
 )
 
 export default IndexPage
