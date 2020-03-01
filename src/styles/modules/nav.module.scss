@@ -1,0 +1,40 @@
+@import '../main.scss';
+
+
+.nav {
+  position: fixed;
+  top: 2rem;
+  right: 10rem;
+}
+
+.ul {
+  list-style: none;
+  display: flex;
+
+}
+
+.li {
+  padding: 1rem;  
+}
+
+.a:link,
+.a:visited {
+  color: $color-grey-dark-1;
+  text-decoration: none;  
+  font-size: 2.5rem;
+  transition: all .2s;
+  padding: 1rem;
+}
+
+.a:focus {
+  outline-color: $color-grey-dark-2;
+}
+
+.a:hover {
+  background-color: $color-grey-dark-2;
+  color: $color-grey-light;
+}
+
+.a:active {
+  background-color: lighten($color-grey-dark-2, 15%);
+}

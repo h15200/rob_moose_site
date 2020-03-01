@@ -1,3 +1,4 @@
+/* eslint-disable arrow-body-style */
 /**
  * Layout component that queries for data
  * with Gatsby's useStaticQuery component
@@ -7,30 +8,20 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "../styles/main.scss"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <>
-      <Header />
+      <Header/>
       <main>
         {children}
       </main>
       <footer>
-          © {new Date().getFullYear()}
+          <p>Copyright © {new Date().getFullYear()}</p>
+          <p>Designed and developed by Hideaki Aomori</p>
       </footer>
     </>
   )

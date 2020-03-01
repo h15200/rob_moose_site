@@ -1,3 +1,5 @@
+
+
 *, 
 *::before,
 *::after {
@@ -12,5 +14,16 @@ html {
 }
 
 body {
+  font-family: $font-primary;
   font-size: 2rem;
+  letter-spacing: 1.4px;
+  background-color: $color-grey-light;
+}
+
+
+
+footer {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 4rem;
 }
