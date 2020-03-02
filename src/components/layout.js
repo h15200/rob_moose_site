@@ -15,14 +15,14 @@ import "../styles/main.scss"
 const Layout = ({ children }) => {
   return (
     <>
-      <Header/>
-      <main>
-        {children}
-      </main>
-      <footer>
+      <Header />
+      <div className="container">
+        <main>{children}</main>
+        <footer>
           <p>Copyright © {new Date().getFullYear()}</p>
           <p>Designed and developed by Hideaki Aomori</p>
-      </footer>
+        </footer>
+      </div>
     </>
   )
 }

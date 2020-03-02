@@ -2,15 +2,14 @@
 
 
 .nav {
-  position: fixed;
-  top: 2rem;
-  right: 10rem;
+  margin-top: 2rem;
+  margin-right: 5rem;
 }
 
 .ul {
   list-style: none;
   display: flex;
-
+  justify-content: flex-end;
 }
 
 .li {
@@ -24,6 +23,7 @@
   font-size: 2.5rem;
   transition: all .2s;
   padding: 1rem;
+  border-bottom: 3px transparent;
 }
 
 .a:focus {
@@ -37,4 +37,15 @@
 
 .a:active {
   background-color: lighten($color-grey-dark-2, 15%);
+}
+
+.active:visited,
+.active:link {
+  border-bottom: 3px solid $color-grey-dark-1;  
+}
+
+.active:hover {
+  background-color: $color-grey-light;
+  color: $color-grey-dark-2;
+  cursor: default;
 }

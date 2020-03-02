@@ -55,7 +55,7 @@ const IndexPage = () => {
 
       <footer className={indexStyles.footer}>
         <p>Copyright © {new Date().getFullYear()}</p>
-        <p>Designed and developed by Hideaki Aomori</p>
+        <p>Designed and developed by <a className={indexStyles.h_link} href="https://www.hideakiaomori.com/dev/" target="_blank" rel="noopener noreferrer">Hideaki Aomori</a></p>
       </footer>
     </>
   )

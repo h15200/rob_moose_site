@@ -55,7 +55,7 @@
 .nav {
   position: fixed;
   top: 2rem;
-  right: 10rem;
+  right: 5rem;
 }
 
 .ul {
@@ -90,7 +90,30 @@
   background-color: lighten($color-grey-dark-2, 15%);
 }
 
+// Footer
+
 .footer {
   text-align: center;
   padding: 1rem;
+  color: $color-grey-dark-2;
+}
+
+// Footer link to author
+
+.h_link:visited,
+.h_link:link {
+  color: $color-grey-dark-2;
+  text-decoration: none;
+  padding: 2px;
+}
+
+.h_link:focus,
+.h_link:hover {
+  background-color: $color-grey-dark-2;
+  color: $color-grey-light;
+  outline: none;
+}
+
+.h_link:active {
+  background-color: lighten($color-grey-dark-2, 15%);
 }
