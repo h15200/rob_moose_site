@@ -29,11 +29,37 @@ body {
 }
 
 main {
+  padding: 4rem 0;
   flex-grow: 1;
+}
+
+h2 {
+  text-align: center;
+
 }
 
 footer {
   font-size: 1.3rem;
   text-align: center;
   margin: 1rem 0;
+
+   .hideaki_link:visited,
+   .hideaki_link:link {
+    color: $color-grey-dark-2;
+    text-decoration: none;
+    padding: 2px 4px;
+  }
+
+  .hideaki_link:focus,
+  .hideaki_link:hover {
+    background-color: $color-grey-dark-2;
+    color: $color-grey-light;
+    outline: none;
+  }
+  
+  .hideaki_link:active {
+    background-color: lighten($color-grey-dark-2, 15%);
+  }
+
 }
+

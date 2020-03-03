@@ -20,7 +20,17 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <footer>
           <p>Copyright © {new Date().getFullYear()}</p>
-          <p>Designed and developed by Hideaki Aomori</p>
+          <p>
+            Designed and developed by{" "}
+            <a
+              className="hideaki_link"
+              href="https://www.hideakiaomori.com/dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Hideaki Aomori
+            </a>
+          </p>
         </footer>
       </div>
     </>
