@@ -1,0 +1,17 @@
+@import '../main.scss';
+
+.sidebar___contact {
+  background-color: $color-accent-3;
+}
+
+
+.activeLink:visited,
+.activeLink:link {
+  border-bottom: 5px solid $color-accent-3;  
+}
+
+.activeLink:hover {
+  background-color: $color-grey-light;
+  color: $color-grey-dark-2;
+  cursor: default;
+}

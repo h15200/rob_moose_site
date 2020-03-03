@@ -9,13 +9,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import Header from "./header"
 import "../styles/main.scss"
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Header />
       <div className="container">
         <main>{children}</main>
         <footer>
