@@ -11,10 +11,10 @@ import PropTypes from "prop-types"
 
 import "../styles/main.scss"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, layoutContainerStyle }) => {
   return (
     <>
-      <div className="layoutContainer">
+      <div className={`${'layoutContainer'} ${layoutContainerStyle}`}>
         <main>{children}</main>
         <footer>
           <p>Copyright © {new Date().getFullYear()}</p>
@@ -37,6 +37,7 @@ const Layout = ({ children }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  layoutContainerStyle: PropTypes.node.isRequired,
 }
 
 export default Layout

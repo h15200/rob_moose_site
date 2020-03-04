@@ -20,7 +20,7 @@ const ContactPage = () => {
             propLinkStyle={contactStyles.navLink}
           />
         </header>
-        <Layout>
+        <Layout layoutContainerStyle={contactStyles.layoutContainer}>
           <SEO title="Contact" />
 
           <h2>Contact</h2>

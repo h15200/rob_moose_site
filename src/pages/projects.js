@@ -19,7 +19,7 @@ const ProjectsPage = () => (
           propLinkStyle={projectsStyles.navLink}
         />
       </header>
-      <Layout>
+      <Layout layoutContainerStyle={projectsStyles.layoutContainer}>
         <SEO title="Projects" />
         <h2>Projects</h2>
         <div className={projectsStyles.center}>
@@ -31,7 +31,6 @@ const ProjectsPage = () => (
           >
             <Spotify className={projectsStyles.spotify} />
           </a>
-        
         </div>
         <div className={projectsStyles.videoContainer}>
           <iframe
@@ -86,8 +85,14 @@ const ProjectsPage = () => (
           />
         </div>
         <div className={projectsStyles.center}>
-          <a className={projectsStyles.allmusicLink} href="https://www.allmusic.com/artist/rob-moose-mn0000563132/credits"
-          target="_blank" rel="noreferrer noopener">See all discography</a>
+          <a
+            className={projectsStyles.allmusicLink}
+            href="https://www.allmusic.com/artist/rob-moose-mn0000563132/credits"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            See all discography
+          </a>
         </div>
       </Layout>
     </div>

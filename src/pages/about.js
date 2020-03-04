@@ -31,7 +31,7 @@ const AboutPage = () => {
             propLinkStyle={aboutStyles.navLink}
           />
         </header>
-        <Layout>
+        <Layout layoutContainerStyle={aboutStyles.layoutContainer}>
           <SEO title="About" />
           <h2>About</h2>
           <div className={aboutStyles.imgContainer}>

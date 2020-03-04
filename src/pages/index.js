@@ -4,6 +4,7 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 
 import SEO from "../components/seo"
 import indexStyles from "../styles/modules/index.module.scss"
+import Menu from '../components/hamburgerMenu'
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -24,7 +25,6 @@ const IndexPage = () => {
         className={indexStyles.backgroundImg}
         fluid={data.background.childImageSharp.fluid}
       />
-
       <header> {/* nav for home page is different from other pages */}
         <nav className={indexStyles.nav}>
           <ul className={indexStyles.ul}>
@@ -45,6 +45,8 @@ const IndexPage = () => {
             </li>
           </ul>
         </nav>
+  { /* hamburger menu component here */ }
+        <Menu />
       </header>
       <h1 className={indexStyles.header_1}>
         Rob Moose{" "}
