@@ -1,0 +1,24 @@
+@keyframes aboutOutline {
+  from {
+    border-bottom: 5px solid transparent;  
+  }
+  to {
+    border-bottom: 5px solid $color-accent-1;
+  }
+}
+@keyframes projectsOutline {
+  from {
+    border-bottom: 5px solid transparent;  
+  }
+  to {
+    border-bottom: 5px solid $color-accent-2;
+  }
+}
+@keyframes contactOutline {
+  from {
+    border-bottom: 5px solid transparent;  
+  }
+  to {
+    border-bottom: 5px solid $color-accent-3;
+  }
+}

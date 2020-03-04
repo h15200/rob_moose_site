@@ -11,7 +11,8 @@
 
 .activeLink:visited,
 .activeLink:link {
-  border-bottom: 5px solid $color-accent-1;  
+  animation: aboutOutline .8s ease-in;
+  animation-fill-mode: forwards;
 }
 
 

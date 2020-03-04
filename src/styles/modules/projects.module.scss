@@ -1,8 +1,16 @@
 @import '../main.scss';
 
+////////////////////////////////
+// Sidebar for projects section
+/////////////////////////////
+
 .sidebar___projects {
   background-color: $color-accent-2;
 }
+
+//////////////
+// nav outline color
+//////////////
 
 .navLink:focus {
   outline-color: $color-accent-2;
@@ -10,10 +18,90 @@
 
 .activeLink:visited,
 .activeLink:link {
-  border-bottom: 5px solid $color-accent-2;  
+  animation: projectsOutline .8s ease-in;
+  animation-fill-mode: forwards;
 }
 
-.gridContainer {
-  
+///////////
+//Spotify Link
+///////////////
+.center {
+  text-align: center;
 }
+
+.spotify {
+  width: 5rem;
+  height: 5rem;
+  fill: $color-grey-dark-1;
+  transition: all .2s;
+}
+
+.spotify:hover{
+  fill: $color-accent-2;
+}
+
+.spotifyLink:focus {
+  outline-color: $color-accent-2;
+}
+
+.spotifyLink:active .spotify {
+  fill: lighten($color-accent-2, 15%);
+}
+
+///////////////
+//VIDEO SECTION
+//////////////////
+
+.videoContainer {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.video {
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+
+/////////
+//link///
+////////
+
+.center{
+  text-align: center;
+}
+
+.allmusicLink {
+  transition: all .2s;
+
+  &:visited,
+  &:link {
+    display: inline-block;
+    margin-top: 5rem;
+  
+    font-size: 3rem;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+  
+    color: $color-grey-dark-2;
+    font-weight: 700;
+    border: 2px $color-grey-dark-2 solid;
+  }
+
+  &:hover {
+    color: $color-grey-light;
+    background-color: $color-grey-dark-2;
+  }
+
+  &:focus {
+    outline-color: $color-accent-2;
+  }
+  &:active {
+    background-color: lighten($color-grey-dark-2, 10%);
+  }
+}
+
 

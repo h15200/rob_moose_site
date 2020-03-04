@@ -44,13 +44,12 @@ const AboutPage = () => {
               Rob Moose is a Grammy Award-winning arranger and string player
               based in New York and Los Angeles. He's written and recorded
               charts for over 400 albums, including work by Bon Iver, Paul
-              Simon, Alabama Shakes, John Legend, Kesha, Bruce Hornsby, Haim,
-              Mumford & Sons and FKA Twigs. As an orchestrator, Moose has been
+              Simon, and John Legend. As an orchestrator, Moose has been
               repeatedly featured on the Declassified Series at the Kennedy
-              Center alongside artists such as Sara Bareilles, Regina Spektor,
-              Blake Mills, Emily King and Ben Folds. He recently served as music
+              Center alongside artists such as Regina Spektor,
+              Emily King and Ben Folds. He recently served as music
               director for Sara Bareilles' "Amidst The Chaos" tour and is a
-              regular contributor to the podcast Punch Up The Jam.
+              regular contributor to the podcast <em>Punch Up The Jam</em>.
             </p>
         </Layout>
       </div>
