@@ -19,28 +19,41 @@ body {
   font-family: $font-primary;
   font-size: 2rem;
   letter-spacing: 1.4px;
-  background-color: $color-grey-light;
+  background-color: $color-background;
 
 }
 
+.gridContainer {
+  display: grid;
+  grid-template-columns: 15rem 1fr;
+}
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto; 
+
+.sidebar {
+  grid-column: 1 / 2;
+
+  width: 15rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+
+}
+
+header {
+  grid-column: 2 / 3;
+}
+
+.layoutContainer {
+  grid-column: 2 / 3;
+  align-items: center;
+
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 
+
 }
-
-// .sidebar {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   height: 100%;
-
-//   background-color: blue;
-// }
 
 main {
   margin: 4rem 0;
@@ -50,6 +63,9 @@ main {
 h2 {
   text-align: center;
   color: $color-grey-dark-2;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 4rem;
 }
 
 footer {
@@ -62,6 +78,7 @@ footer {
     color: $color-grey-dark-2;
     text-decoration: none;
     padding: 2px 4px;
+    transition: all .2s;
   }
 
   .hideaki_link:focus,

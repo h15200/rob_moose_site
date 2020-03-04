@@ -1,22 +1,27 @@
 import React from "react"
 
+import Sidebar from "../components/sidebar"
 import Layout from "../components/layout"
-import Sidebar from '../components/sidebar'
-import Nav from '../components/nav'
+import Nav from "../components/nav"
 import SEO from "../components/seo"
 
-import projectsStyles from '../styles/modules/projects.module.scss'
+import projectsStyles from "../styles/modules/projects.module.scss"
+
+import Spotify from '../svg/spotify.svg'
 
 const ProjectsPage = () => (
   <>
-  <Sidebar propStyle={projectsStyles.sidebar___projects} />
-  <header>
-    <Nav propStyle={projectsStyles.activeLink} />
-  </header>
-  <Layout>
-    <SEO title="Projects" />
-    <h2>Projects Page</h2>
-  </Layout>
+    <div className={`${"gridContainer"} ${projectsStyles.gridContainer}`}>
+      <Sidebar propStyle={projectsStyles.sidebar___projects} />
+      <header>
+        <Nav propActiveStyle={projectsStyles.activeLink} propLinkStyle={projectsStyles.navLink}/>
+      </header>
+      <Layout>
+        <SEO title="Projects" />
+        <h2>Projects</h2>
+        <Spotify />
+      </Layout>
+    </div>
   </>
 )
 

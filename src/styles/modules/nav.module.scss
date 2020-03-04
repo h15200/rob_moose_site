@@ -39,13 +39,8 @@
   background-color: lighten($color-grey-dark-2, 15%);
 }
 
-// .active:visited,
-// .active:link {
-//   border-bottom: 3px solid $color-grey-dark-1;  
-// }
-
-// .active:hover {
-//   background-color: $color-grey-light;
-//   color: $color-grey-dark-2;
-//   cursor: default;
-// }
+.active:hover {
+  background-color: $color-background;
+  color: $color-grey-dark-2;
+  cursor: default;
+}

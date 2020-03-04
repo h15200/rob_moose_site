@@ -4,14 +4,16 @@
   background-color: $color-accent-2;
 }
 
+.navLink:focus {
+  outline-color: $color-accent-2;
+}
 
 .activeLink:visited,
 .activeLink:link {
   border-bottom: 5px solid $color-accent-2;  
 }
 
-.activeLink:hover {
-  background-color: $color-grey-light;
-  color: $color-grey-dark-2;
-  cursor: default;
+.gridContainer {
+  
 }
+

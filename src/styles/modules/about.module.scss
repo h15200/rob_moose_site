@@ -1,25 +1,46 @@
 @import '../main.scss';
 
 
-
-
 .sidebar___about {
   background-color: $color-accent-1;
-
-
   }
 
- 
-
-
+  .navLink:focus {
+    outline-color: $color-accent-1;
+  }
 
 .activeLink:visited,
 .activeLink:link {
   border-bottom: 5px solid $color-accent-1;  
 }
 
-.activeLink:hover {
-  background-color: $color-grey-light;
-  color: $color-grey-dark-2;
-  cursor: default;
+
+.imgContainer {
+  display: block;
+  margin: 2rem auto;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.headshot {
+  width: 100%;
+  height: 100%;
+  transition: all .3s ease;
+  &:hover {
+    transform: scale(1.8);
+  }
+}
+
+.p {
+  font-family: $font-text;
+  font-size: 1.7rem;
+  line-height: 2;
+  width: 70rem;
+  font-weight: 500;
+  color: $color-grey-light;
+  padding: 2rem 4rem;
+  background-color: $color-grey-dark-1;
+
 }

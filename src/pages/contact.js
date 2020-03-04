@@ -9,14 +9,16 @@ import contactStyles from '../styles/modules/contact.module.scss'
 
 const ContactPage = () => (
   <>
+  <div className={`${"gridContainer"} ${contactStyles.gridContainer}`}>
   <Sidebar propStyle={contactStyles.sidebar___contact} />
   <header>
-    <Nav propStyle={contactStyles.activeLink} />
+    <Nav propActiveStyle={contactStyles.activeLink} propLinkStyle={contactStyles.navLink}/>
   </header>
   <Layout>
     <SEO title="Contact" />
-    <h2>Contact Page</h2>
+    <h2>Contact</h2>
   </Layout>
+</div>
   </>
 )
 

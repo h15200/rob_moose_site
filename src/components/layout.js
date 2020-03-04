@@ -14,7 +14,7 @@ import "../styles/main.scss"
 const Layout = ({ children }) => {
   return (
     <>
-      <div className="container">
+      <div className="layoutContainer">
         <main>{children}</main>
         <footer>
           <p>Copyright © {new Date().getFullYear()}</p>

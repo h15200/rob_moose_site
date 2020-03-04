@@ -38,6 +38,14 @@ module.exports = {
           },
         ],
       },
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /svg/ // Or wherever the dir is with svgs
+        }
+      }
     }
     // {
     //   resolve: `gatsby-plugin-manifest`,
