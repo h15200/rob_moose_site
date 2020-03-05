@@ -1,5 +1,7 @@
 import React from "react"
+import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
+
 import navStyles from "../styles/modules/nav.module.scss"
 
 
@@ -31,5 +33,9 @@ const Nav = props => (
     </nav>
   </>
 )
+Nav.propTypes = {
+  propLinkStyle: PropTypes.string,
+  propActiveStyle: PropTypes.string
+}
 
 export default Nav

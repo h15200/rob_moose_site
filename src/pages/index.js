@@ -50,7 +50,7 @@ const IndexPage = () => {
           </ul>
         </nav>
 
-        <Menu func={toggleModal} />
+        <Menu toggleFunc={toggleModal} />
       </header>
       <h1 className={indexStyles.header_1}>
         Rob Moose{" "}

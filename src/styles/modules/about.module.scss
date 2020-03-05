@@ -44,3 +44,19 @@
   background-color: $color-grey-dark-1;
 
 }
+
+////HAMBURGER////
+
+.menuIcon {
+  transition: all .2s;
+
+  &:focus {
+    outline-color: $color-grey-dark-1;
+    outline: solid 1px;
+    background-color: $color-background;
+  }
+}
+
+.menuHamburger {
+  background-color: $color-grey-dark-1;
+}

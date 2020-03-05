@@ -1,15 +1,23 @@
 import React from 'react'
+import PropTypes from "prop-types"
+
 import menuStyles from '../styles/modules/hamburgerMenu.module.scss'
 
-const hamburgerMenu = props => {
+const HamburgerMenu = props => {
   return (
     <>
-    <button id="btn" className={menuStyles.icon} onClick={props.func}>
-      <div className={menuStyles.hamburger} />
+    <button id="btn" className={`${menuStyles.icon} ${props.propMenuIconStyle}`} onClick={props.toggleFunc}>
+      <div className={`${menuStyles.hamburger} ${props.propMenuHamburgerStyle}`} />
     </button>
     </>
   )
 }
 
-export default hamburgerMenu
-  
+HamburgerMenu.propTypes = {
+  toggleFunc: PropTypes.func,
+  propMenuIconStyle: PropTypes.string,
+  propMenuHamburgerStyle: PropTypes.string
+}
+
+export default HamburgerMenu
+
