@@ -18,6 +18,10 @@ const IndexPage = () => {
       }
     }
   `)
+  const toggleModal = () => {
+    const nav = document.getElementById('nav')
+    nav.classList.toggle(indexStyles.menuToggle)
+  }
   return (
     <>
       <SEO title="Home" />
@@ -26,7 +30,7 @@ const IndexPage = () => {
         fluid={data.background.childImageSharp.fluid}
       />
       <header> {/* nav for home page is different from other pages */}
-        <nav className={indexStyles.nav}>
+        <nav className={indexStyles.nav} id="nav">
           <ul className={indexStyles.ul}>
             <li className={indexStyles.li}>
               <Link to="/about" className={indexStyles.a}>
@@ -45,8 +49,8 @@ const IndexPage = () => {
             </li>
           </ul>
         </nav>
-  { /* hamburger menu component here */ }
-        <Menu />
+
+        <Menu func={toggleModal} />
       </header>
       <h1 className={indexStyles.header_1}>
         Rob Moose{" "}

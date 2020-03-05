@@ -6,6 +6,7 @@ import Sidebar from "../components/sidebar"
 import Layout from "../components/layout"
 import Nav from "../components/nav"
 import SEO from "../components/seo"
+import Menu from '../components/hamburgerMenu'
 
 import aboutStyles from "../styles/modules/about.module.scss"
 
@@ -30,6 +31,7 @@ const AboutPage = () => {
             propActiveStyle={aboutStyles.activeLink}
             propLinkStyle={aboutStyles.navLink}
           />
+          <Menu />
         </header>
         <Layout layoutContainerStyle={aboutStyles.layoutContainer}>
           <SEO title="About" />

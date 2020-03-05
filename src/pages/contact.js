@@ -4,6 +4,7 @@ import Sidebar from "../components/sidebar"
 import Layout from "../components/layout"
 import Nav from "../components/nav"
 import SEO from "../components/seo"
+import Menu from '../components/hamburgerMenu'
 
 import Instagram from "../svg/instagram.svg"
 
@@ -19,6 +20,7 @@ const ContactPage = () => {
             propActiveStyle={contactStyles.activeLink}
             propLinkStyle={contactStyles.navLink}
           />
+          <Menu />
         </header>
         <Layout layoutContainerStyle={contactStyles.layoutContainer}>
           <SEO title="Contact" />

@@ -4,6 +4,7 @@ import Sidebar from "../components/sidebar"
 import Layout from "../components/layout"
 import Nav from "../components/nav"
 import SEO from "../components/seo"
+import Menu from '../components/hamburgerMenu'
 
 import projectsStyles from "../styles/modules/projects.module.scss"
 
@@ -18,6 +19,7 @@ const ProjectsPage = () => (
           propActiveStyle={projectsStyles.activeLink}
           propLinkStyle={projectsStyles.navLink}
         />
+        <Menu />
       </header>
       <Layout layoutContainerStyle={projectsStyles.layoutContainer}>
         <SEO title="Projects" />

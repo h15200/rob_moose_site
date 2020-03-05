@@ -4,6 +4,11 @@
 .nav {
   margin-top: 2rem;
   margin-right: 5rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    background-color: $color-grey-dark-2;
+ 
+  }
 }
 
 .ul {

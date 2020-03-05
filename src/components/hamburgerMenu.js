@@ -1,12 +1,15 @@
 import React from 'react'
 import menuStyles from '../styles/modules/hamburgerMenu.module.scss'
 
-const hamburgerMenu = () => {
+const hamburgerMenu = props => {
   return (
-    <div className={menuStyles.icon}>
-      
-    </div>
+    <>
+    <button id="btn" className={menuStyles.icon} onClick={props.func}>
+      <div className={menuStyles.hamburger} />
+    </button>
+    </>
   )
 }
 
 export default hamburgerMenu
+  
