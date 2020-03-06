@@ -1,6 +1,8 @@
 @import '../main.scss';
 
-
+//////////
+//MENU BTN
+//////////
 
 .icon {
   visibility: hidden; // default is large screen so hide
@@ -19,15 +21,14 @@
   justify-content: center;
   align-items: center;
 
-  transition: all .2s;
+  transition: all .2s, visibility 0;
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-medium) { // show menu for small screen
     visibility: visible;
   }
 
   &:focus {
     outline: none;
-    background-color: $color-grey-dark-2;
   }
 
   &:hover {
@@ -36,13 +37,18 @@
 
 }
 
+///////////
+//HAMBURGER DIVs
+//////////////
+
 .hamburger {
   position: absolute;
   height: 3px;
   width: 4rem;
-  background-color: $color-grey-light;
+  background-color: $color-grey-dark-2;
   border-radius: 1px;
 
+  transition: transform .4s ease-out;
 
   &::before,
   &::after {
@@ -63,8 +69,12 @@
   }
 }
 
+//////////////
+//MODAL////////
+//////////////
+
 .nav {
-  transition: all .2s;
+  transition: all .4s;
   background-color: $color-grey-dark-2;
   position: fixed;
   width: 100%;
@@ -73,9 +83,10 @@
   left: 0;
   z-index: 100;
 
-  // unclicked state. 
+  // unclicked state
   transform: translateX(100%);
   visibility: hidden;
+  opacity: 0;   // opacity added to create smooth transition 
 }
 
 .ul {
@@ -118,15 +129,42 @@
   background-color: darken($color-grey-light, 15%);
 }
 
-.menuOpen .nav{
-  transform: translateX(0);
-  visibility: visible;
+//////////////////
+//MODAL OPEN STATE//
+//////////////////
+.menuOpen {
+
+  & .nav {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+  }
+
+  & .icon {
+    position: fixed;
+
+    &:focus {
+      background-color: $color-grey-dark-2;
+    }
+  }
+
+  & .hamburger {
+    transform: rotate(225deg);
+    background-color: orangered;
+
+    &::after {
+      transform: translateY(0) rotate(90deg);
+    }
+
+    &::before {
+      display: none;
+    }
+  }
 }
 
-.menuOpen .icon {
-  position: fixed;
-}
 
-.menuOpen .hamburger {
-  transform: rotate(180deg);
-}
+
+
+
+
+

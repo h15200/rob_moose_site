@@ -22,10 +22,6 @@ const AboutPage = () => {
       }
     }
   `)
-  const toggleModalComponent = () => {
-    const nav = document.getElementById("navComponent")
-    nav.classList.toggle(aboutStyles.menuToggle)
-  }
   return (
     <>
       <div className={`${"gridContainer"}`}>
@@ -36,11 +32,7 @@ const AboutPage = () => {
             propActiveStyle={aboutStyles.activeLink}
             propLinkStyle={aboutStyles.navLink}
           />
-          <Menu
-            propMenuIconStyle={aboutStyles.menuIcon}
-            propMenuHamburgerStyle={aboutStyles.menuHamburger}
-            toggleFunc={toggleModalComponent}
-          />
+          <Menu/>
         </header>
         <Layout layoutContainerStyle={aboutStyles.layoutContainer}>
           <SEO title="About" />

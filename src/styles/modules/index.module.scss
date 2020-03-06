@@ -10,7 +10,7 @@
     height: 85vh;
   }
   @media only screen and (max-width: $bp-small) {
-    height: 75vh;
+    height: 70vh;
   }
 }
 
@@ -124,6 +124,13 @@
     transform: translateX(-50%);
   }
 }
+
+
+//HAMBURGER MENU COLOR CHANGE
+.hamburgerMenu {
+  background-color: $color-grey-light;
+}
+
 
 // Footer link to author
 

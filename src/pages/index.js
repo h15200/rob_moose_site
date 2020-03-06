@@ -45,7 +45,7 @@ const IndexPage = () => {
             </li>
           </ul>
         </nav>
-        <Menu  />
+        <Menu style={indexStyles.hamburgerMenu}/>
       </header>
       <h1 className={indexStyles.header_1}>
         Rob Moose{" "}

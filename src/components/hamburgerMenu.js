@@ -23,7 +23,7 @@ const HamburgerMenu = props => {
           <div className={`${menuStyles.hamburger}`} />
         </button>
 
-        <nav className={menuStyles.nav} id="smallScreenNav">
+        <nav className={menuStyles.nav}>
           <ul className={menuStyles.ul}>
             <li className={menuStyles.li}>
               <Link to="/" className={`${menuStyles.a} `}
