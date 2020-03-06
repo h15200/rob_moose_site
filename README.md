@@ -1,1 +1,1 @@
-project page youtube width - below 700 px must be resized
+index - picture try using width instead of height once the orientation is flipped

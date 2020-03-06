@@ -59,6 +59,14 @@
 }
 
 .video {
+  @media only screen and (max-width: $bp-video) {
+    width: 75vw;
+    height: calc(75vw / 1.77);
+  }
+  @media only screen and (max-width: $bp-medium) {
+    width: 100%;
+    height: calc(100vw / 1.77);
+  }
 
   &:not(:last-child) {
     margin-bottom: 2rem;
@@ -80,6 +88,7 @@
   &:link {
     display: inline-block;
     margin-top: 5rem;
+    margin-bottom: 4rem;
   
     font-size: 3rem;
     text-decoration: none;
