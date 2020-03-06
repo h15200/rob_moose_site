@@ -4,7 +4,6 @@ import { Link } from 'gatsby'
 
 import navStyles from "../styles/modules/nav.module.scss"
 
-
 const Nav = props => (
   <>
     <nav className={navStyles.nav}>

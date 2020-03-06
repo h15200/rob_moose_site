@@ -1,14 +1,57 @@
-import React from 'react'
+import React from "react"
 import PropTypes from "prop-types"
+import { Link } from "gatsby"
 
-import menuStyles from '../styles/modules/hamburgerMenu.module.scss'
+import menuStyles from "../styles/modules/hamburgerMenu.module.scss"
 
 const HamburgerMenu = props => {
+  const toggleModal = () => {
+    const toggle = document.getElementById('toggle')
+    toggle.classList.toggle(menuStyles.menuOpen)
+  }
+  const removeModal = () => {
+    const toggle = document.getElementById('toggle')
+    toggle.classList.remove(menuStyles.menuOpen)
+  }
   return (
     <>
-    <button id="btn" className={`${menuStyles.icon} ${props.propMenuIconStyle}`} onClick={props.toggleFunc}>
-      <div className={`${menuStyles.hamburger} ${props.propMenuHamburgerStyle}`} />
-    </button>
+      <div className={menuStyles.container} id="toggle">
+        <button
+          className={`${menuStyles.icon}`}
+          onClick={toggleModal}
+        >
+          <div className={`${menuStyles.hamburger}`} />
+        </button>
+
+        <nav className={menuStyles.nav} id="smallScreenNav">
+          <ul className={menuStyles.ul}>
+            <li className={menuStyles.li}>
+              <Link to="/" className={`${menuStyles.a} `}
+              onClick={removeModal}>
+                Home
+              </Link>
+            </li>
+            <li className={menuStyles.li}>
+              <Link to="/about" className={`${menuStyles.a} `}
+              onClick={removeModal}>
+                About
+              </Link>
+            </li>
+            <li className={menuStyles.li}>
+              <Link to="/projects" className={`${menuStyles.a} `}
+              onClick={removeModal}>
+                Projects
+              </Link>
+            </li>
+            <li className={menuStyles.li}>
+              <Link to="/contact" className={`${menuStyles.a} `}
+              onClick={removeModal}>
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </>
   )
 }
@@ -16,8 +59,7 @@ const HamburgerMenu = props => {
 HamburgerMenu.propTypes = {
   toggleFunc: PropTypes.func,
   propMenuIconStyle: PropTypes.string,
-  propMenuHamburgerStyle: PropTypes.string
+  propMenuHamburgerStyle: PropTypes.string,
 }
 
 export default HamburgerMenu
-

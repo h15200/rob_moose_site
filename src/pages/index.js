@@ -18,10 +18,6 @@ const IndexPage = () => {
       }
     }
   `)
-  const toggleModal = () => {
-    const nav = document.getElementById('nav')
-    nav.classList.toggle(indexStyles.menuToggle)
-  }
   return (
     <>
       <SEO title="Home" />
@@ -49,8 +45,7 @@ const IndexPage = () => {
             </li>
           </ul>
         </nav>
-
-        <Menu toggleFunc={toggleModal} />
+        <Menu  />
       </header>
       <h1 className={indexStyles.header_1}>
         Rob Moose{" "}
@@ -58,7 +53,6 @@ const IndexPage = () => {
           string arrangements and recording
         </span>
       </h1>
-
       <footer className={indexStyles.footer}>
         <p>Copyright © {new Date().getFullYear()}</p>
         <p>Designed and developed by <a className={indexStyles.h_link} href="https://www.hideakiaomori.com/dev/" target="_blank" rel="noopener noreferrer">Hideaki Aomori</a></p>
