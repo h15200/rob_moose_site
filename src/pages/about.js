@@ -36,7 +36,7 @@ const AboutPage = () => {
         </header>
         <Layout layoutContainerStyle={aboutStyles.layoutContainer}>
           <SEO title="About" />
-          <h2>About</h2>
+          <h2 className={aboutStyles.h2}>About</h2>
           <div className={aboutStyles.imgContainer}>
             <Img
               className={aboutStyles.headshot}

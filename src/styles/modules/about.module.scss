@@ -2,11 +2,11 @@
 
 .sidebar___about {
   background-color: $color-accent-1;
-  }
+}
 
-  .navLink:focus {
-    outline-color: $color-accent-1;
-  }
+.navLink:focus {
+  outline-color: $color-accent-1;
+}
 
 .activeLink:visited,
 .activeLink:link {
@@ -22,20 +22,34 @@
   height: 10rem;
   border-radius: 50%;
   overflow: hidden;
+
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 3rem;
+  }
 }
 
 .headshot {
   width: 100%;
   height: 100%;
   transition: all .3s ease;
+
   &:hover {
     transform: scale(1.8);
   }
+
 }
+
+.h2 {
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 3rem;
+  }
+}
+
 
 .p {
   font-family: $font-text;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   line-height: 2;
   width: 70rem;
   font-weight: 500;
@@ -43,20 +57,14 @@
   padding: 2rem 4rem;
   background-color: $color-grey-dark-1;
 
+  @media only screen and (max-width: $bp-medium) {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+    
+  @media only screen and (max-width: $bp-small) {
+    width: 100%;
+   }
+
 }
-
-////HAMBURGER////
-
-// .menuIcon {
-//   transition: all .2s;
-
-//   &:focus {
-//     outline-color: $color-grey-dark-1;
-//     outline: solid 1px;
-//     background-color: $color-background;
-//   }
-// }
-
-// .menuHamburger {
-//   background-color: $color-grey-dark-1;
-// }

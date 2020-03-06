@@ -1,0 +1,1 @@
+project page youtube width - below 700 px must be resized
