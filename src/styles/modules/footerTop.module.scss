@@ -1,0 +1,15 @@
+@import '../main.scss';
+
+.footerTop {
+  // since no width/height, nothing will show for big screen
+
+  @media only screen and (max-width: $bp-medium) {
+
+    height: 4px;
+    width: 100%;
+    margin-bottom: 2rem;
+
+  }
+
+
+}

@@ -1,0 +1,24 @@
+// Font
+
+$font-primary: 'Bebas Neue';
+$font-header: 'Lobster';
+$font-text: 'Mukta';
+
+// Color
+
+$color-grey-light: #e2e2e2;
+$color-background: #efefef;
+
+$color-grey-dark-1: #444;
+$color-grey-dark-2: #333;
+
+$color-accent-1: #8E9EC2;
+$color-accent-2: #6E6D96;
+$color-accent-3: #3A2C61;
+
+// break points
+$bp-largest: 62.5em; // 1000px center header in home
+$bp-large: 50em; // 800px when background image of home page breaks
+$bp-video: 43.75em; // when video is too large
+$bp-medium: 37.5em; // 600px  phone size
+$bp-small: 27em; // 432px small phone

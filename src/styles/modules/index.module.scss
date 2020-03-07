@@ -1,0 +1,153 @@
+@import '../main.scss';
+
+.backgroundImg {
+  height: 100vh;
+  position: relative;
+
+  filter: brightness(80%);
+
+  & img {
+    object-position: 60% !important;
+  }
+
+}
+
+
+.header_1 {
+  font-family: $font-header;
+  color: $color-grey-light;
+  font-size: 9rem;
+
+
+  position: absolute;
+  top: 35%;
+  left: 20%;
+
+  @media only screen and (max-width: $bp-largest) {
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    top: 20%;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 6rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 5rem;
+  }
+
+}
+
+.subHeading {
+
+  font-family: $font-primary;
+  display: block;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 1.8rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 1.7rem;
+  }
+
+}
+
+/////////
+//NAV////
+/////////
+
+.nav {
+  position: fixed;
+  top: 2rem;
+  right: 5rem;
+  transition: all .2s;
+
+  // hide normal menu for small screen
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
+}
+
+
+.ul {
+  list-style: none;
+  display: flex;
+}
+
+.li {
+  padding: 1rem;
+}
+
+.a:link,
+.a:visited {
+  color: $color-grey-dark-2;
+  text-decoration: none;
+  font-size: 2.5rem;
+  transition: all .2s;
+  padding: 1rem;
+}
+
+.a:focus {
+  outline-color: $color-grey-light;
+}
+
+.a:hover {
+  background-color: $color-grey-dark-2;
+  color: $color-grey-light;
+}
+
+.a:active {
+  background-color: lighten($color-grey-dark-2, 15%);
+}
+
+// Footer
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  color: $color-grey-dark-2;
+
+  // @media only screen and (max-width: $bp-large) {
+  //   position: fixed;
+  //   width: 100%;
+  //   bottom: 1rem;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  // }
+}
+
+
+//HAMBURGER MENU FIXED ONLY FOR INDEX PAGE
+.hamburgerMenu {
+  position: fixed;
+}
+
+
+// Footer link to author
+
+.h_link:visited,
+.h_link:link {
+  color: $color-grey-dark-2;
+  text-decoration: none;
+  padding: 2px 4px;
+}
+
+.h_link:focus,
+.h_link:hover {
+  background-color: $color-grey-dark-2;
+  color: $color-grey-light;
+  outline: none;
+}
+
+.h_link:active {
+  background-color: lighten($color-grey-dark-2, 15%);
+}

@@ -1,3 +1,4 @@
+/* eslint-disable arrow-body-style */
 /**
  * Layout component that queries for data
  * with Gatsby's useStaticQuery component
@@ -7,37 +8,29 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import FooterTop from './footerTop'
 
-import Header from "./header"
-import "./layout.css"
+import "../styles/main.scss"
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
+const Layout = ({ children, layoutContainerStyle, footerTopStyle }) => {
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <div className={`${'layoutContainer'} ${layoutContainerStyle}`}>
         <main>{children}</main>
+        <FooterTop pageStyle={footerTopStyle} />
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <p>Copyright © {new Date().getFullYear()}</p>
+          <p>
+            Designed and developed by{" "}
+            <a
+              className="hideaki_link"
+              href="https://www.hideakiaomori.com/dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Hideaki Aomori
+            </a>
+          </p>
         </footer>
       </div>
     </>
@@ -46,6 +39,8 @@ const Layout = ({ children }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  layoutContainerStyle: PropTypes.node.isRequired,
+  footerTopStyle: PropTypes.string
 }
 
 export default Layout

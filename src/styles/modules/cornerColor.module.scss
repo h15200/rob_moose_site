@@ -1,0 +1,14 @@
+@import '../main.scss';
+
+.corner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15rem;
+  height: 15rem;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  
+// set background-color in page module
+
+}
+

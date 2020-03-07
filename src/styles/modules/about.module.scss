@@ -1,0 +1,82 @@
+@import '../main.scss';
+
+////////////////////////////////
+//SIDEBAR AND TOP-LEFT CORNER COLOR
+////////////////////////////////
+
+.sidebar___about,
+.corner {
+  background-color: $color-accent-1;
+}
+
+
+.navLink:focus {
+  outline-color: $color-accent-1;
+}
+
+.activeLink:visited,
+.activeLink:link {
+  animation: aboutOutline .8s ease-in;
+  animation-fill-mode: forwards;
+}
+
+
+.imgContainer {
+  display: block;
+  margin: 2rem auto;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  overflow: hidden;
+
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 3rem;
+  }
+}
+
+.headshot {
+  width: 100%;
+  height: 100%;
+  transition: all .3s ease;
+
+  &:hover {
+    transform: scale(1.8);
+  }
+
+}
+
+.h2 {
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 3rem;
+  }
+}
+
+
+.p {
+  font-family: $font-text;
+  font-size: 1.9rem;
+  line-height: 2;
+  width: 70rem;
+  font-weight: 500;
+  color: $color-grey-light;
+  padding: 2rem 4rem;
+  background-color: $color-grey-dark-1;
+  margin-bottom: 2rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+    
+  @media only screen and (max-width: $bp-small) {
+    width: 100%;
+   }
+
+}
+
+.footerTop {
+  background-color: $color-accent-1;
+  margin-top: 6rem;
+}

@@ -1,0 +1,52 @@
+@import '../main.scss';
+
+
+.nav {
+  margin-top: 2rem;
+  margin-right: 5rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    background-color: $color-grey-dark-2;
+    visibility: hidden;
+
+  }
+}
+
+.ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.li {
+  padding: 1rem;  
+}
+
+.a:link,
+.a:visited {
+  color: $color-grey-dark-1;
+  text-decoration: none;  
+  font-size: 2.5rem;
+  transition: all .2s, visibility 0;
+  padding: 1rem;
+  border-bottom: 5px transparent;
+}
+
+.a:focus {
+  outline-color: $color-grey-dark-2;
+}
+
+.a:hover {
+  background-color: $color-grey-dark-2;
+  color: $color-grey-light;
+}
+
+.a:active {
+  background-color: lighten($color-grey-dark-2, 15%);
+}
+
+.active:hover {
+  background-color: $color-background;
+  color: $color-grey-dark-2;
+  cursor: default;
+}

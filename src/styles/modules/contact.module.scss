@@ -1,0 +1,98 @@
+@import '../main.scss';
+
+
+////////////////////////////////
+//SIDEBAR AND TOP-LEFT CORNER COLOR
+////////////////////////////////
+
+.sidebar___contact,
+.corner {
+  background-color: $color-accent-3;
+}
+
+.navLink:focus {
+  outline-color: $color-accent-3;
+}
+
+.activeLink:visited,
+.activeLink:link {
+  animation: projectsOutline .8s ease-in;
+  animation-fill-mode: forwards;
+}
+
+
+/////////
+//INSTAGRAM LINK
+////////////////
+
+.center {
+  text-align: center;
+}
+
+.instagram {
+  width: 5rem;
+  height: 5rem;
+  fill: $color-grey-dark-1;
+  transition: all .2s;
+  stroke: $color-accent-3;
+}
+
+.instagram:hover{
+  fill: $color-grey-light;
+  background-color: $color-accent-1;
+}
+
+.instagramLink {
+  display: inline-block;
+
+  &:active .instagram {
+    background-color: lighten($color-accent-1, 15%);
+  }
+  
+  &:focus {
+    outline-color: $color-accent-3;
+  }
+
+}
+
+
+///////
+//CONTACT
+//////////
+
+
+.contact {
+  margin-top: 6rem;
+  color: $color-grey-dark-2;
+}
+
+.emailLink {
+  display: inline-block;
+  margin-top: 6rem;
+  transition: all .2s;
+
+  &:visited,
+  &:link {
+    text-decoration: none;
+    color: $color-grey-dark-2;
+    border: 2px $color-grey-dark-2 solid;
+    padding: 1rem;
+
+    &:focus {
+      outline-color: $color-accent-3;
+    }
+
+    &:hover {
+      background-color: $color-grey-dark-2;
+      color: $color-grey-light;
+    }
+
+    &:active {
+      background-color: lighten($color-grey-dark-2, 15%);
+    }
+  }
+}
+
+.footerTop {
+  background-color: $color-accent-3;
+}
