@@ -56,7 +56,7 @@
   }
 
   @media only screen and (max-width: $bp-small) {
-    font-size: 1.7rem;
+    font-size: 12px;
   }
 
 }
@@ -115,14 +115,7 @@
   text-align: center;
   padding: 1rem;
   color: $color-grey-dark-2;
-
-  // @media only screen and (max-width: $bp-large) {
-  //   position: fixed;
-  //   width: 100%;
-  //   bottom: 1rem;
-  //   left: 50%;
-  //   transform: translateX(-50%);
-  // }
+  font-size: 12px;
 }
 
 

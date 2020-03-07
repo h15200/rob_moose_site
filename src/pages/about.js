@@ -16,7 +16,7 @@ const AboutPage = () => {
     query {
       headshot: file(relativePath: { eq: "headshot.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 500) {
+          fluid(maxWidth: 100) {
             ...GatsbyImageSharpFluid
           }
         }

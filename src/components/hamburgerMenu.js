@@ -18,7 +18,7 @@ const HamburgerMenu = props => {
       <div className={menuStyles.container} id="toggle">
         <button
           className={`${menuStyles.icon} ${props.hamburgerIconStyle}`}
-          onClick={toggleModal}
+          onClick={toggleModal} aria-label="Menu"
         >
           <div className={`${menuStyles.hamburger}`} />
         </button>
