@@ -1,6 +1,7 @@
 import React from "react"
 
 import Sidebar from "../components/sidebar"
+import CornerColor from '../components/cornerColor'
 import Layout from "../components/layout"
 import Nav from "../components/nav"
 import SEO from "../components/seo"
@@ -15,6 +16,7 @@ const ContactPage = () => {
     <>
       <div className={`${"gridContainer"} ${contactStyles.gridContainer}`}>
         <Sidebar propStyle={contactStyles.sidebar___contact} />
+        <CornerColor pageStyle={contactStyles.corner} />
         <header>
           <Nav
             propActiveStyle={contactStyles.activeLink}

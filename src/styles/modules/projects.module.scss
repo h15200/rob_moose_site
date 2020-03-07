@@ -1,10 +1,11 @@
 @import '../main.scss';
 
 ////////////////////////////////
-// Sidebar for projects section
-/////////////////////////////
+//SIDEBAR AND TOP-LEFT CORNER COLOR
+////////////////////////////////
 
-.sidebar___projects {
+.sidebar___projects,
+.corner {
   background-color: $color-accent-2;
 }
 

@@ -1,6 +1,7 @@
 import React from "react"
 
 import Sidebar from "../components/sidebar"
+import CornerColor from '../components/cornerColor'
 import Layout from "../components/layout"
 import Nav from "../components/nav"
 import SEO from "../components/seo"
@@ -14,6 +15,7 @@ const ProjectsPage = () => (
   <>
     <div className={`${"gridContainer"} ${projectsStyles.gridContainer}`}>
       <Sidebar propStyle={projectsStyles.sidebar___projects} />
+      <CornerColor pageStyle={projectsStyles.corner} />
       <header>
         <Nav
           propActiveStyle={projectsStyles.activeLink}

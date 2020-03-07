@@ -1,6 +1,12 @@
 @import '../main.scss';
 
-.sidebar___contact {
+
+////////////////////////////////
+//SIDEBAR AND TOP-LEFT CORNER COLOR
+////////////////////////////////
+
+.sidebar___contact,
+.corner {
   background-color: $color-accent-3;
 }
 
@@ -14,9 +20,6 @@
   animation-fill-mode: forwards;
 }
 
-.gridContainer {
-  
-}
 
 /////////
 //INSTAGRAM LINK

@@ -1,8 +1,14 @@
 @import '../main.scss';
 
-.sidebar___about {
+////////////////////////////////
+//SIDEBAR AND TOP-LEFT CORNER COLOR
+////////////////////////////////
+
+.sidebar___about,
+.corner {
   background-color: $color-accent-1;
 }
+
 
 .navLink:focus {
   outline-color: $color-accent-1;

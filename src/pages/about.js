@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import Sidebar from "../components/sidebar"
+import CornerColor from '../components/cornerColor'
 import Layout from "../components/layout"
 import Nav from "../components/nav"
 import SEO from "../components/seo"
@@ -26,6 +27,7 @@ const AboutPage = () => {
     <>
       <div className={`${"gridContainer"}`}>
         <Sidebar propStyle={aboutStyles.sidebar___about} />
+        <CornerColor pageStyle={aboutStyles.corner} />
         <header>
           <Nav
             id="navComponent"
