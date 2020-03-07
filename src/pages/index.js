@@ -4,7 +4,7 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 
 import SEO from "../components/seo"
 import indexStyles from "../styles/modules/index.module.scss"
-import Menu from '../components/hamburgerMenu'
+import Menu from "../components/hamburgerMenu"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -24,9 +24,10 @@ const IndexPage = () => {
       <Img
         className={indexStyles.backgroundImg}
         fluid={data.background.childImageSharp.fluid}
-        imgStyle={{ objectPosition: '60%' }}
-              />
-      <header> {/* nav for home page is different from other pages */}
+      />
+      <header>
+        {" "}
+        {/* nav for home page is different from other pages */}
         <nav className={indexStyles.nav} id="nav">
           <ul className={indexStyles.ul}>
             <li className={indexStyles.li}>
@@ -46,7 +47,7 @@ const IndexPage = () => {
             </li>
           </ul>
         </nav>
-        <Menu style={indexStyles.hamburgerMenu}/>
+        <Menu style={indexStyles.hamburgerMenu} />
       </header>
       <h1 className={indexStyles.header_1}>
         Rob Moose{" "}
@@ -56,7 +57,17 @@ const IndexPage = () => {
       </h1>
       <footer className={indexStyles.footer}>
         <p>Copyright © {new Date().getFullYear()}</p>
-        <p>Designed and developed by <a className={indexStyles.h_link} href="https://www.hideakiaomori.com/dev/" target="_blank" rel="noopener noreferrer">Hideaki Aomori</a></p>
+        <p>
+          Designed and developed by{" "}
+          <a
+            className={indexStyles.h_link}
+            href="https://www.hideakiaomori.com/dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Hideaki Aomori
+          </a>
+        </p>
       </footer>
     </>
   )

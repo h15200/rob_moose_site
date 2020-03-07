@@ -6,9 +6,11 @@
 
   filter: brightness(80%);
 
+  & img {
+    object-position: 60% !important;
+  }
+
 }
-
-
 
 
 .header_1 {

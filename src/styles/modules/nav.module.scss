@@ -27,7 +27,7 @@
   color: $color-grey-dark-1;
   text-decoration: none;  
   font-size: 2.5rem;
-  transition: all .2s;
+  transition: all .2s, visibility 0;
   padding: 1rem;
   border-bottom: 5px transparent;
 }
