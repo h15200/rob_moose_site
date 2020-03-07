@@ -47,7 +47,7 @@ const IndexPage = () => {
             </li>
           </ul>
         </nav>
-        <Menu hamburgerIconStyle={indexStyles.hamburgerMenu} aria-label="Menu" />
+        <Menu hamburgerIconStyle={indexStyles.hamburgerMenu} />
       </header>
       <h1 className={indexStyles.header_1}>
         Rob Moose{" "}
