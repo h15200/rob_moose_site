@@ -1,11 +1,11 @@
 import React from "react"
 
 import Sidebar from "../components/sidebar"
-import CornerColor from '../components/cornerColor'
+import CornerColor from "../components/cornerColor"
 import Layout from "../components/layout"
 import Nav from "../components/nav"
 import SEO from "../components/seo"
-import Menu from '../components/hamburgerMenu'
+import Menu from "../components/hamburgerMenu"
 
 import projectsStyles from "../styles/modules/projects.module.scss"
 
@@ -23,7 +23,10 @@ const ProjectsPage = () => (
         />
         <Menu />
       </header>
-      <Layout layoutContainerStyle={projectsStyles.layoutContainer}>
+      <Layout
+        layoutContainerStyle={projectsStyles.layoutContainer}
+        footerTopStyle={projectsStyles.footerTop}
+      >
         <SEO title="Projects" />
         <h2>Projects</h2>
         <div className={projectsStyles.center}>

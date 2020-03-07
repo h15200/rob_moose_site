@@ -1,11 +1,11 @@
 import React from "react"
 
 import Sidebar from "../components/sidebar"
-import CornerColor from '../components/cornerColor'
+import CornerColor from "../components/cornerColor"
 import Layout from "../components/layout"
 import Nav from "../components/nav"
 import SEO from "../components/seo"
-import Menu from '../components/hamburgerMenu'
+import Menu from "../components/hamburgerMenu"
 
 import Instagram from "../svg/instagram.svg"
 
@@ -24,7 +24,10 @@ const ContactPage = () => {
           />
           <Menu />
         </header>
-        <Layout layoutContainerStyle={contactStyles.layoutContainer}>
+        <Layout
+          layoutContainerStyle={contactStyles.layoutContainer}
+          footerTopStyle={contactStyles.footerTop}
+        >
           <SEO title="Contact" />
 
           <h2>Contact</h2>

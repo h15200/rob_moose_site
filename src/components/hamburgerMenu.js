@@ -17,7 +17,7 @@ const HamburgerMenu = props => {
     <>
       <div className={menuStyles.container} id="toggle">
         <button
-          className={`${menuStyles.icon}`}
+          className={`${menuStyles.icon} ${props.hamburgerIconStyle}`}
           onClick={toggleModal}
         >
           <div className={`${menuStyles.hamburger}`} />
@@ -57,9 +57,7 @@ const HamburgerMenu = props => {
 }
 
 HamburgerMenu.propTypes = {
-  toggleFunc: PropTypes.func,
-  propMenuIconStyle: PropTypes.string,
-  propMenuHamburgerStyle: PropTypes.string,
+  hamburgerIconStyle: PropTypes.string
 }
 
 export default HamburgerMenu

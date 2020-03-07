@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import Sidebar from "../components/sidebar"
-import CornerColor from '../components/cornerColor'
+import CornerColor from "../components/cornerColor"
 import Layout from "../components/layout"
 import Nav from "../components/nav"
 import SEO from "../components/seo"
@@ -34,9 +34,12 @@ const AboutPage = () => {
             propActiveStyle={aboutStyles.activeLink}
             propLinkStyle={aboutStyles.navLink}
           />
-          <Menu/>
+          <Menu />
         </header>
-        <Layout layoutContainerStyle={aboutStyles.layoutContainer}>
+        <Layout
+          layoutContainerStyle={aboutStyles.layoutContainer}
+          footerTopStyle={aboutStyles.footerTop}
+        >
           <SEO title="About" />
           <h2 className={aboutStyles.h2}>About</h2>
           <div className={aboutStyles.imgContainer}>

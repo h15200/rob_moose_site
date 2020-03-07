@@ -8,14 +8,16 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import FooterTop from './footerTop'
 
 import "../styles/main.scss"
 
-const Layout = ({ children, layoutContainerStyle }) => {
+const Layout = ({ children, layoutContainerStyle, footerTopStyle }) => {
   return (
     <>
       <div className={`${'layoutContainer'} ${layoutContainerStyle}`}>
         <main>{children}</main>
+        <FooterTop pageStyle={footerTopStyle} />
         <footer>
           <p>Copyright © {new Date().getFullYear()}</p>
           <p>
@@ -38,6 +40,7 @@ const Layout = ({ children, layoutContainerStyle }) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
   layoutContainerStyle: PropTypes.node.isRequired,
+  footerTopStyle: PropTypes.string
 }
 
 export default Layout
