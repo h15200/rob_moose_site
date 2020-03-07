@@ -24,7 +24,8 @@ const IndexPage = () => {
       <Img
         className={indexStyles.backgroundImg}
         fluid={data.background.childImageSharp.fluid}
-      />
+        imgStyle={{ objectPosition: '60%' }}
+              />
       <header> {/* nav for home page is different from other pages */}
         <nav className={indexStyles.nav} id="nav">
           <ul className={indexStyles.ul}>

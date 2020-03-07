@@ -6,19 +6,15 @@
 
   filter: brightness(80%);
 
-  @media only screen and (max-width: $bp-large) {
-    height: 85vh;
-  }
-  @media only screen and (max-width: $bp-small) {
-    height: 70vh;
-  }
 }
+
+
 
 
 .header_1 {
   font-family: $font-header;
   color: $color-grey-light;
-  font-size: 9rem;  
+  font-size: 9rem;
 
 
   position: absolute;
@@ -36,8 +32,9 @@
   }
 
   @media only screen and (max-width: $bp-medium) {
-    font-size:  6rem;
+    font-size: 6rem;
   }
+
   @media only screen and (max-width: $bp-small) {
     font-size: 5rem;
   }
@@ -55,6 +52,7 @@
   @media only screen and (max-width: $bp-medium) {
     font-size: 1.8rem;
   }
+
   @media only screen and (max-width: $bp-small) {
     font-size: 1.7rem;
   }
@@ -90,7 +88,7 @@
 .a:link,
 .a:visited {
   color: $color-grey-dark-2;
-  text-decoration: none;  
+  text-decoration: none;
   font-size: 2.5rem;
   transition: all .2s;
   padding: 1rem;
@@ -116,13 +114,13 @@
   padding: 1rem;
   color: $color-grey-dark-2;
 
-  @media only screen and (max-width: $bp-large) {
-    position: fixed;
-    width: 100%;
-    bottom: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+  // @media only screen and (max-width: $bp-large) {
+  //   position: fixed;
+  //   width: 100%;
+  //   bottom: 1rem;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  // }
 }
 
 
