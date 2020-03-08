@@ -49,6 +49,7 @@ const ProjectsPage = () => (
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
+            loading="lazy"
           />
           <iframe
             className={projectsStyles.video}
@@ -59,6 +60,7 @@ const ProjectsPage = () => (
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
+            loading="lazy"
           />
           <iframe
             className={projectsStyles.video}
@@ -69,6 +71,7 @@ const ProjectsPage = () => (
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
+            loading="lazy"
           />
           <iframe
             className={projectsStyles.video}
@@ -79,6 +82,7 @@ const ProjectsPage = () => (
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
+            loading="lazy"
           />
           <iframe
             className={projectsStyles.video}
@@ -89,6 +93,7 @@ const ProjectsPage = () => (
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
+            loading="lazy"
           />
         </div>
         <div className={projectsStyles.center}>
