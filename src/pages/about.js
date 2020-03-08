@@ -14,9 +14,9 @@ import aboutStyles from "../styles/modules/about.module.scss"
 const AboutPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      headshot: file(relativePath: { eq: "headshot.jpg" }) {
+      headshot: file(relativePath: { eq: "new_headshot.png" }) {
         childImageSharp {
-          fluid(maxWidth: 100) {
+          fluid(maxWidth: 250) {
             ...GatsbyImageSharpFluid
           }
         }

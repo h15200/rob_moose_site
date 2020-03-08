@@ -24,9 +24,9 @@
 .imgContainer {
   display: block;
   margin: 2rem auto;
-  width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
+  width: 13rem;
+  height: 15rem;
+  border-radius: 3px;
   overflow: hidden;
 
 
@@ -38,10 +38,10 @@
 .headshot {
   width: 100%;
   height: 100%;
-  transition: all .3s ease;
+  transition: all .3s;
 
   &:hover {
-    transform: scale(1.8);
+    transform: scale(1.7) translateY(15%);
   }
 
 }
